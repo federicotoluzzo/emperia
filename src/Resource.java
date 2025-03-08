@@ -24,4 +24,8 @@ public class Resource {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public String toString(){
+        return String.format("{ResourceType: %s, Quantity: %d}", type.toString(), quantity);
+    }
 }

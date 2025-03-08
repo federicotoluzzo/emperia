@@ -1,7 +1,7 @@
 import types.ResourceType;
 
 public class Reign {
-    private Resource[] warehouse;
+    private Warehouse warehouse;
     private String name;
     private int gold;
     private Terrain[] map;
@@ -10,10 +10,8 @@ public class Reign {
         this.name = name;
         this.gold = gold;
 
-        map =  new Terrain[5];
-        warehouse = new Resource[ResourceType.values().length];
-
-        fillWarehouse();
+        map = new Terrain[5];
+        warehouse = new Warehouse(map);
     }
 
     public void addTerrain(Terrain terrain) {
@@ -26,16 +24,8 @@ public class Reign {
         throw new IndexOutOfBoundsException("Too many terrains.");
     }
 
-    private void fillWarehouse() {
-        for (int i = 0; i < ResourceType.values().length; i++) {
-            warehouse[i] = new Resource(ResourceType.values()[i], 0);
-        }
-    }
-
     public void printWarehouse() {
-        for (Resource r : warehouse) {
-            System.out.printf("%s : %d\n", r.getType().name(), r.getQuantity());
-        }
+        System.out.println(warehouse);
     }
 
     public Terrain getTerrain(int index){

@@ -25,11 +25,15 @@ public class Terrain {
         return building;
     }
 
-    public void build(Building building) {
+    public boolean build(Building building) {
+        System.out.println(options.toString());
         if(options.contains(building.getType())) {
             this.building = building;
-            this.building.run();
+            Thread t = new Thread(this.building);
+            t.start();
+            return true;
         }
+        return false;
     }
 
     public static Terrain create(TerrainType type) {
