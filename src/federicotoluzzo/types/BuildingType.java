@@ -1,4 +1,4 @@
-package types;
+package federicotoluzzo.types;
 
 public enum BuildingType {
     QUARRY,

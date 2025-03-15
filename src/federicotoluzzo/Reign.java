@@ -1,4 +1,4 @@
-import types.ResourceType;
+package federicotoluzzo;
 
 public class Reign {
     private Warehouse warehouse;

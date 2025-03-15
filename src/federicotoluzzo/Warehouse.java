@@ -1,6 +1,7 @@
-import types.ResourceType;
+package federicotoluzzo;
 
-import java.util.Arrays;
+import federicotoluzzo.types.ResourceType;
+
 import java.util.concurrent.TimeUnit;
 
 public class Warehouse implements Runnable {
@@ -47,7 +48,7 @@ public class Warehouse implements Runnable {
     @Override
     public String toString(){
         String ret = "";
-        ret += "Warehouse: \n";
+        ret += "federicotoluzzo.Warehouse: \n";
         for (int i = 0; i < warehouse.length; i++) {
             Resource r = warehouse[i];
             ret += (i == warehouse.length - 1 ? "\u2514" : "\u251c") + r.toString() + "\n";

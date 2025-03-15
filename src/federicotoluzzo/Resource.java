@@ -1,4 +1,6 @@
-import types.ResourceType;
+package federicotoluzzo;
+
+import federicotoluzzo.types.ResourceType;
 
 public class Resource {
     private ResourceType type;

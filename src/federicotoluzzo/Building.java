@@ -1,5 +1,7 @@
-import types.BuildingType;
-import types.ResourceType;
+package federicotoluzzo;
+
+import federicotoluzzo.types.BuildingType;
+import federicotoluzzo.types.ResourceType;
 
 import java.util.concurrent.TimeUnit;
 

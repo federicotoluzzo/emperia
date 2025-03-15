@@ -1,8 +1,8 @@
-import types.BuildingType;
-import types.ResourceType;
-import types.TerrainType;
+package federicotoluzzo;
 
-import java.util.concurrent.TimeUnit;
+import federicotoluzzo.types.BuildingType;
+import federicotoluzzo.types.ResourceType;
+import federicotoluzzo.types.TerrainType;
 
 public class Main {
     public static void main(String[] args) {

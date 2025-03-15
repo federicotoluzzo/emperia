@@ -1,5 +1,7 @@
-import types.BuildingType;
-import types.TerrainType;
+package federicotoluzzo;
+
+import federicotoluzzo.types.BuildingType;
+import federicotoluzzo.types.TerrainType;
 
 import java.util.HashSet;
 
