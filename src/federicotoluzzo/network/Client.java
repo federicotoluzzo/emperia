@@ -47,9 +47,9 @@ public class Client {
         return response;
     }
 
-    public static ArrayList<String> build(TerrainType tt, BuildingType bt) {
+    public static boolean build(TerrainType tt, BuildingType bt) {
         Socket socket = null;
-        ArrayList<String> response = new ArrayList<String>();
+        boolean response = true;
         try{
             socket = new Socket("192.168.4.60", 6830);
 
@@ -62,18 +62,11 @@ public class Client {
             out.println(bt.toString());
             out.flush();
 
-            System.out.println(in.readLine());
-
 
             if(in.readLine().equalsIgnoreCase("OK")){ // Oll Korrect
-                response.add(in.readLine());
-                response.add(in.readLine());
-                response.add(in.readLine());
-                response.add(in.readLine());
-                response.add(in.readLine());
-                response.add(in.readLine());
+                response = true;
             } else {
-                return null;
+                response = false;
             }
 
             out.close();

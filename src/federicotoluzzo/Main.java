@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         System.out.println(Client.create("⣏ඞ⣹")); //ඞඞඞ
-        System.out.println(Client.build(TerrainType.FIELD, BuildingType.FIELD)); //ඞඞඞ
+        System.out.println(Client.build(TerrainType.MOUNTAIN, BuildingType.QUARRY)); //ඞඞඞ
 
         /*Reign test = new Reign("HO SCELTO ROMA", 999);
         Terrain t = Terrain.create(TerrainType.FIELD);
