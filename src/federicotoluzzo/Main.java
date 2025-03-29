@@ -6,11 +6,24 @@ import federicotoluzzo.types.ResourceType;
 import federicotoluzzo.types.TerrainType;
 
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Client.create("⣏ඞ⣹")); //ඞඞඞ
+        String nome = "o(*￣︶￣*)o";
+        System.out.println(Client.create(nome)); //ඞඞඞ
         System.out.println(Client.build(TerrainType.MOUNTAIN, BuildingType.QUARRY)); //ඞඞඞ
+        System.out.println(Client.build(TerrainType.MOUNTAIN, BuildingType.QUARRY)); //ඞඞඞ
+        System.out.println(Client.build(TerrainType.MOUNTAIN, BuildingType.QUARRY)); //ඞඞඞ
+        System.out.println(Client.build(TerrainType.MOUNTAIN, BuildingType.QUARRY)); //ඞඞඞ
+        System.out.println(Client.build(TerrainType.MOUNTAIN, BuildingType.QUARRY)); //ඞඞඞ
+        System.out.println(Client.getReigns());
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(Client.remove(nome));
 
         /*Reign test = new Reign("HO SCELTO ROMA", 999);
         Terrain t = Terrain.create(TerrainType.FIELD);
